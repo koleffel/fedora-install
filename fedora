@@ -14,9 +14,9 @@
 
 echo -n "Do You Want to Enable RPMFusion repo ? "
 
-read STRING1
+read RPMF
 
-if [[ "$STRING1" == "yes" ]]
+if [[ "$RPMF" == "yes" || "$RPMF == "y" ]]
 then
   sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
@@ -26,9 +26,9 @@ fi
 
 echo -n "Do You Want To Install The Metadata And Multimedia From RPMFuison ? "
 
-read STRING2
+read SMULTIM
 
-if [[ "$STRING2" == "yes" || "$STRING2" == "y" ]]
+if [[ "$MULTIM" == "yes" || "$MULTIM" == "y" ]]
 then
   sudo dnf groupupdate core -y
 
@@ -48,9 +48,9 @@ fi
 
 echo -n "Do You Want To Instal The NVIDIA Driver ? "
 
-read STRING3
+read NVIDIA
 
-if [[ "$STRING3" == "yes" || "$STRING3" == "y" ]]
+if [[ "$NVIDIA" == "yes" || "$NVIDIA" == "y" ]]
 then 
   sudo dnf update -y
 
@@ -66,9 +66,9 @@ fi
 
 echo -n "Do You Want To Install WINE-STAGING for GAMING ? "
 
-read STRING4
+read WINES
 
-if [[ "$STRING4" == "yes" || "$STRING4" == "y" ]]
+if [[ "$WINES" == "yes" || "$WINES" == "y" ]]
 then
   sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo
 
@@ -78,9 +78,9 @@ fi
 
 echo -n "Do You Want To Install STEAM and LUTRIS for GAMING ? " 
 
-read STRING5
+read STEAM
 
-if [[ "$STRING5" == "yes" || "$STRING5" == "y" ]]
+if [[ "$STEAM" == "yes" || "$STEAM" == "y" ]]
 then
 
   sudo dnf install steam lutris  -y
@@ -89,9 +89,9 @@ fi
 
 echo -n "Do You Want To Enable And USE FLATPAKs ? "
 
-read STRING6
+read FLATPK
 
-if [[ "$STRING6" == "yes" || "$STRING6" == "y" ]]
+if [[ "$FLATPK" == "yes" || "$FLATPK" == "y" ]]
 then
 
   flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -100,9 +100,9 @@ fi
 
 echo -n "Do You Want To Install  The GNOME Tweaks and Extensions Tools ? " 
 
-read STRING7
+read TWEAKS
 
-if [[ "$STRING7" == "yes" || "$STRING7" == "y" ]]
+if [[ "$TWEAKS" == "yes" || "$TWEAKS" == "y" ]]
 then
 
   sudo dnf install gnome-extensions-app gnome-tweaks -y
