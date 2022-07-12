@@ -27,7 +27,7 @@ sudo dnf groupupdate core -y
 
   sudo dnf install xorg-x11-drv-nvidia-cuda-libs -y
   
-  sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo
+  sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/36/winehq.repo
 
   sudo dnf install winehq-staging -y
   
