@@ -1,8 +1,8 @@
  Basic script to help you with the top 10 things i usually do after new Fedora install .
  
-  After you download the file , Extract it , open the folder and make the "FEDORA" file  executable with :
+  After you download the file , Extract it , open the folder and make the "install_all" file  executable with :
  
- chmod +x fedora 
+ chmod +x install_all 
  
  or right click on the file , go to the permissions tab and check the "make executable"
  
