@@ -1,0 +1,23 @@
+remove :
+cheese
+libreoffice-calc
+libreoffice-writer
+libreoffice-impress
+document scanner
+
+
+install :
+onlyoffice
+kdenlive
+simplescreenrecorder
+obs-studio
+brave
+qbittorrent
+spotify
+VScode
+Viber
+Video Downloader
+Discord
+
+
+
