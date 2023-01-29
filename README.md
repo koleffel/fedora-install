@@ -14,7 +14,7 @@
  
  Then right click in the folder where your "FEDORA" file is and from the drop-down menu choose the Open Terminal Here , Then type in the Terminal :
   
- ./fedora
+ ./fedora.sh
  
  enter your password and follow the Questions for What you need to install !
  
