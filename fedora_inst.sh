@@ -13,6 +13,20 @@ echo " Remove Document Scanner . "
 
 sudo dnf remove simple-scan -y
 
+echo "/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**//*/*/*/"
+echo "Installing extra software !"
+echo "/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**//*/*/*/"
+
+sudo dnf install audacity -y
+
+sudo dnf install gimp -y
+
+sudo dnf install git -y
+
+sudo dnf install uget -y
+
+sudo dnf install vlc -y
+
 echo " Install OnlyOffice from Flatpak "
 
 sudo flatpak install flathub org.onlyoffice.desktopeditors -y
