@@ -30,6 +30,7 @@ sudo dnf remove kmahjongg -y
 sudo dnf remove kmines -y
 sudo dnf remove kpat -y
 sudo dnf remove kamoso -y
+sudo dnf remove akregator -y
 
 
 
