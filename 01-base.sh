@@ -14,6 +14,10 @@
 
   sudo dnf groupupdate core -y
 
+  sudo dnf update --refresh
+
+  sudo dnf upgrade --refresh -y
+
   echo "Installing the Multimedia Codecs !"
 
   sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
@@ -22,7 +26,9 @@
 
   sudo dnf group upgrade --with-optional Multimedia -y
 
-  sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
+  sudo dnf install x265 x264 wavpack xvidcore faad2 faad2-libs mpg123 -y
+
+  #sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
 
   echo "Installing the Sound And Video Codecs !"
 
@@ -58,9 +64,12 @@
 
   echo "Installing The VULKAN package !"
 
-  sudo dnf install vulkan -y
+  sudo dnf install vulkan vulkan-tools vulkan-headers vulkan-loader vulkan-validation-layers-y
 
   sudo dnf install xorg-x11-drv-nvidia-cuda-libs -y
+
+  sudo dnf upgrade -y
+
     
   echo "Adding FLATPAK to your System !"
 
@@ -68,7 +77,9 @@
   
   echo "Installing the Gnome Extensions and Gnome Tweaks to your System !"
 
-#  sudo dnf install gnome-extensions-app gnome-tweaks -y
+  echo "Adding the Gnome-tweaks and Gnome Extensions for customizations !"
+
+  sudo dnf install gnome-extensions-app gnome-tweaks -y
 
   echo "===================================="
   
