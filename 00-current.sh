@@ -15,7 +15,7 @@ sh 03-*
 
 sh 04-*
 
-sh 05-*
+#sh 05-*
 
 sudo dnf update -y 
 
